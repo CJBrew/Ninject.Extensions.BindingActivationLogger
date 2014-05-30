@@ -6,7 +6,7 @@
     /// <summary>
     /// Module for loading the binding activation logger
     /// </summary>
-    public class MissingBindingLoggerModule : NinjectModule
+    public class BindingActivationLoggerModule : NinjectModule
     {
         /// <summary>
         /// Loads the module into the kernel.
