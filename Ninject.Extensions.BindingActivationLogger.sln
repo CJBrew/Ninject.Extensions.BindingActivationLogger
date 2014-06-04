@@ -1,19 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ninject.Extensions.BindingActivationLogger", "Ninject.Extensions.BindingActivationLogger\Ninject.Extensions.BindingActivationLogger.csproj", "{CF1374F9-5168-4219-AB39-D1EC691C08DC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGetPackage", "NuGetPackage\NuGetPackage.csproj", "{0451BAEF-DF2E-4B98-8644-94EE9415E389}"
-	ProjectSection(ProjectDependencies) = postProject
-		{CF1374F9-5168-4219-AB39-D1EC691C08DC} = {CF1374F9-5168-4219-AB39-D1EC691C08DC}
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{7A96CBB5-E0DC-41B2-BE9C-27FB9376A609}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.targets = .nuget\NuGet.targets
-		.nuget\nuget.exe = .nuget\nuget.exe
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF1374F9-5168-4219-AB39-D1EC691C08DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CF1374F9-5168-4219-AB39-D1EC691C08DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF1374F9-5168-4219-AB39-D1EC691C08DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
