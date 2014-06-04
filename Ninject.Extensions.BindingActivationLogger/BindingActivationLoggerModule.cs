@@ -1,4 +1,8 @@
-﻿namespace Ninject.Extensions.BindingActivationLogger
+﻿using System;
+using log4net;
+using Ninject.Extensions.Logging;
+
+namespace Ninject.Extensions.BindingActivationLogger
 {
     using Ninject.Activation.Strategies;
     using Ninject.Modules;
@@ -13,7 +17,7 @@
         /// </summary>
         public override void Load()
         {
-            Kernel.Components.Add<IActivationStrategy, ActivationLogger>();
+            Kernel.Components.Add<IActivationStrategy, BindingActivationLogger>();
         }
     }
 }

@@ -7,7 +7,7 @@
     /// <summary>
     /// Component for logging Ninject bindings
     /// </summary>
-    public class ActivationLogger : ActivationStrategy
+    public class BindingActivationLogger : ActivationStrategy
     {
         /// <summary>
         /// Gets the logger.
@@ -24,7 +24,12 @@
         /// <param name="reference">A reference to the instance being activated.</param>
         public override void Activate(IContext context, InstanceReference reference)
         {
-            if (reference.Instance is ILogger && this.Log == null)
+
+            if( reference.Instance is ILoggerFactory && this.Log == null )
+            {
+                this.Log = ( ( ILoggerFactory ) reference.Instance ).GetCurrentClassLogger();
+            }
+            else if (reference.Instance is ILogger && this.Log == null)
             {
                 this.Log = (ILogger)reference.Instance;
             }
